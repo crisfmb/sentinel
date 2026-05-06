@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# Type checkers
+.mypy_cache/
+.ruff_cache/
+
+# Environment variables (secrets)
+.env
+.env.local
+.env.*.local
+
+# IDE / editors
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Terraform (later phases)
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+
+# Docker
+docker-compose.override.yml
+
+# Logs
+*.log
+logs/
