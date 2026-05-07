@@ -1,6 +1,6 @@
 name: CI
 
-on: 
+on:
   push:
     branches: [main]
   pull_request:
@@ -13,15 +13,15 @@ permissions:
 jobs:
   lint:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Run actionlint 
+      - name: Run actionlint
         run: |
           bash <(curl https://raw.githubusercontent.com/rhysd/actionlint/main/scripts/download-actionlint.bash)
           ./actionlint -color
       - name: Run markdownlint
-        run:  | 
+        run: |
           npm install -g markdownlint-cli2
 
           markdownlint-cli2 "**/*.md"
