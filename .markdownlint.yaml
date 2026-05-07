@@ -1,0 +1,3 @@
+# Markdownlint config issue — keeps default rules except line-length.
+default: true
+MD013: false
