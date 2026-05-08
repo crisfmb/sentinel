@@ -31,6 +31,22 @@ jobs:
           pip install yamllint
           yamllint .
 
+
+  unit-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v3
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Run pytest
+        run: uv run pytest -v
+
   secrets:
     runs-on: ubuntu-latest
     steps:
