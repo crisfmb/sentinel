@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Add your description here"
 requires-python = ">=3.12"
 dependencies = [
+    "boto3>=1.43.6",
     "fastapi>=0.136.1",
     "uvicorn[standart]>=0.46.0",
 ]
@@ -11,5 +12,6 @@ dependencies = [
 [dependency-groups]
 dev = [
     "httpx>=0.28.1",
+    "moto>=5.2.1",
     "pytest>=9.0.3",
 ]
