@@ -1,0 +1,17 @@
+# Dependabot config: weekly dependency updates for Python (uv) and GitHub Actions.
+# Docs: https://docs.github.com/en/code-security/dependabot
+version: 2
+updates:
+  - package-ecosystem: "uv"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
