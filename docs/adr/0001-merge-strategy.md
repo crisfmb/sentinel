@@ -29,6 +29,7 @@ A separate incident on 2026-05-27 produced *"Dependabot couldn't access the repo
 Allow **merge commit** and **squash and merge**. Disable **rebase and merge** in repository settings — it is incompatible with the signed-commits requirement.
 
 Per-PR choice:
+
 - **Squash** for atomic changes (typos, single-purpose features) and for bot PRs whose branch commits are unsigned — squash collapses them into one GitHub-signed commit.
 - **Merge commit** for larger PRs where branch history tells a useful story (multi-step refactors with intentional intermediate states by a contributor whose commits are locally signed).
 
