@@ -5,7 +5,7 @@ description = "Add your description here"
 requires-python = ">=3.12"
 dependencies = [
     "boto3>=1.43.15",
-    "fastapi>=0.136.3",
+    "fastapi>=0.139.0",
     "uvicorn[standard] >= 0.48.0",
 ]
 
