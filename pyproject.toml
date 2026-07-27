@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Add your description here"
 requires-python = ">=3.12"
 dependencies = [
-    "boto3>=1.43.39",
+    "boto3>=1.43.57",
     "fastapi>=0.136.3",
     "uvicorn[standard] >= 0.48.0",
 ]
